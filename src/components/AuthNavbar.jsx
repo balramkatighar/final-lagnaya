@@ -41,18 +41,18 @@ const AuthNavbar = () => {
               Matches
             </NavLink>
             <NavLink
-              to="/pricing"
+              to="/profile"
               className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
               activeClassName="text-primary font-semibold"
             >
-              Pricing
+              My Profile
             </NavLink>
             <NavLink
-              to="/contact"
+              to="/settings"
               className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
               activeClassName="text-primary font-semibold"
             >
-              Contact
+              Settings
             </NavLink>
           </div>
 
