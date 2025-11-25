@@ -13,7 +13,11 @@ import ProfileCreate from "./pages/ProfileCreate";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Matches from "./pages/Matches";
+import MatchDetails from "./pages/MatchDetails";
+import Favourites from "./pages/Favourites";
 import Settings from "./pages/Settings";
+import Payment from "./pages/Payment";
+import PaymentSuccess from "./pages/PaymentSuccess";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,7 +39,11 @@ const App = () => (
             <Route path="/profile" element={<Profile />} />
             <Route path="/profile/create" element={<ProfileCreate />} />
             <Route path="/matches" element={<Matches />} />
+            <Route path="/match/:id" element={<MatchDetails />} />
+            <Route path="/favourites" element={<Favourites />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/payment-success" element={<PaymentSuccess />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

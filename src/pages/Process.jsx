@@ -25,7 +25,7 @@ const Process = () => {
       icon: SearchCheck,
       title: "Manual Family Review",
       description:
-        "Our experienced team manually reviews each profile to ensure authenticity and cultural compatibility within the Kshetriya Kathri community.",
+        "Our experienced team manually reviews each profile to ensure authenticity and cultural compatibility within the Kshetriya Khatri community.",
       color: "bg-accent/10 text-accent",
     },
     {
@@ -130,7 +130,7 @@ const Process = () => {
                 Ready to Begin Your Journey?
               </h3>
               <p className="mb-6 text-primary-foreground/90">
-                Start with 2 free matches and experience the Kathri Lagnaya
+                Start with 2 free matches and experience the Khatri Lagnaya
                 difference
               </p>
               <Button

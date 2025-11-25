@@ -284,7 +284,7 @@ const ProfileCreate = () => {
                     htmlFor="consent"
                     className="text-sm font-medium cursor-pointer"
                   >
-                    I allow Kathri Lagnaya team to review and validate my
+                    I allow Khatri Lagnaya team to review and validate my
                     profile *
                   </Label>
                   <p className="text-xs text-muted-foreground">

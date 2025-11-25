@@ -54,10 +54,10 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
             <h2 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
-              Why Choose Kathri Lagnaya?
+              Why Choose Khatri Lagnaya?
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-              Exclusively for Kshetriya Kathri community with values that matter
+              Exclusively for Kshetriya Khatri community with values that matter
             </p>
           </div>
 
@@ -181,7 +181,7 @@ const Home = () => {
             Ready to Find Your Perfect Match?
           </h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Join Kathri Lagnaya today and experience matchmaking rooted in
+            Join Khatri Lagnaya today and experience matchmaking rooted in
             tradition, powered by care.
           </p>
           <Button

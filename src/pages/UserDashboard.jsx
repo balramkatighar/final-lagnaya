@@ -185,8 +185,8 @@ const Progress = React.forwardRef(({ className, value = 0, ...props }, ref) => (
 ));
 Progress.displayName = "Progress";
 
-// Main Dashboard Component
-const Dashboard = () => {
+// Main UserDashboard Component
+const UserDashboard = () => {
   const navigate = useNavigate();
   const userName = "Priya Sharma";
   const profileCompletion = 85;
@@ -434,6 +434,7 @@ const Dashboard = () => {
                     )}
                   />
                 </button>
+
                 <div className="flex flex-col sm:flex-row gap-4 p-4">
                   <div className="w-32 h-32 rounded-xl overflow-hidden flex-shrink-0 mx-auto sm:mx-0 border-2 border-primary/20">
                     <img
@@ -688,4 +689,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default UserDashboard;

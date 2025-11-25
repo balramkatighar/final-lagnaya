@@ -12,7 +12,7 @@ const Footer = () => {
                 <Heart className="h-4 w-4 sm:h-5 sm:w-5 text-primary-foreground fill-current" />
               </div>
               <span className="font-playfair text-lg sm:text-xl font-bold text-primary">
-                Kathri Lagnaya
+                Khatri Lagnaya
               </span>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground">
@@ -83,7 +83,7 @@ const Footer = () => {
             <ul className="space-y-2 text-xs sm:text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>contact@kathrilagnaya.com</span>
+                <span>contact@khatrilagnaya.com</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -95,8 +95,8 @@ const Footer = () => {
 
         <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border text-center text-xs sm:text-sm text-muted-foreground">
           <p className="px-4">
-            © 2024 Kathri Lagnaya. All rights reserved. Exclusively for
-            Kshetriya Kathri community.
+            © 2024 Khatri Lagnaya. All rights reserved. Exclusively for
+            Kshetriya Khatri community.
           </p>
         </div>
       </div>

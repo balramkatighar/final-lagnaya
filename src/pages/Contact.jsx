@@ -93,7 +93,7 @@ const Contact = () => {
                         Email
                       </h3>
                       <p className="text-muted-foreground text-sm">
-                        contact@kathrilagnaya.com
+                        contact@khatrilagnaya.com
                       </p>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                         Location
                       </h3>
                       <p className="text-muted-foreground text-sm">
-                        Serving Kshetriya Kathri community across India
+                        Serving Kshetriya Khatri community across India
                       </p>
                     </div>
                   </div>

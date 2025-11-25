@@ -10,9 +10,22 @@ import {
   Briefcase,
   GraduationCap,
   Edit,
+  Crown,
+  Calendar,
 } from "lucide-react";
+import React from "react";
 
 const Profile = () => {
+  const [subscription, setSubscription] = React.useState(null);
+
+  React.useEffect(() => {
+    // Get subscription from localStorage
+    const savedSubscription = localStorage.getItem("userSubscription");
+    if (savedSubscription) {
+      setSubscription(JSON.parse(savedSubscription));
+    }
+  }, []);
+
   return (
     <div className="min-h-screen py-6 sm:py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -149,6 +162,83 @@ const Profile = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Subscription Status */}
+          {subscription && subscription.status === "active" ? (
+            <Card className="border-primary/50 bg-gradient-to-br from-primary/5 to-accent/5">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="font-playfair text-xl flex items-center gap-2">
+                    <Crown className="h-5 w-5 text-primary" />
+                    Active Subscription
+                  </CardTitle>
+                  <Badge className="bg-accent text-accent-foreground">
+                    Premium
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div>
+                  <p className="text-sm text-muted-foreground">Plan</p>
+                  <p className="font-medium text-foreground">
+                    {subscription.planName}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Activated On</p>
+                  <p className="font-medium text-foreground flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    {new Date(subscription.activatedDate).toLocaleDateString(
+                      "en-IN",
+                      {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      }
+                    )}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Valid Until</p>
+                  <p className="font-medium text-foreground">
+                    {new Date(subscription.expiryDate).toLocaleDateString(
+                      "en-IN",
+                      {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      }
+                    )}
+                  </p>
+                </div>
+                <Button variant="outline" className="w-full" asChild>
+                  <Link to="/pricing">Upgrade Plan</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          ) : (
+            <Card className="border-border/50">
+              <CardHeader>
+                <CardTitle className="font-playfair text-xl">
+                  No Active Subscription
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Upgrade to premium to unlock more matches and features
+                </p>
+                <Button
+                  className="w-full bg-primary hover:bg-primary/90"
+                  asChild
+                >
+                  <Link to="/pricing">
+                    <Crown className="h-4 w-4 mr-2" />
+                    View Plans
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          )}
 
           {/* Astrology Details */}
           <Card className="border-border/50">

@@ -128,7 +128,16 @@ const Pricing = () => {
                     size="lg"
                     asChild
                   >
-                    <Link to={plan.highlight ? "/profile/create" : "/contact"}>
+                    <Link
+                      to={
+                        plan.name === "Free Trial"
+                          ? "/profile/create"
+                          : plan.name === "Standard Package"
+                          ? "/payment"
+                          : "/contact"
+                      }
+                      state={{ plan: plan }}
+                    >
                       {plan.buttonText}
                     </Link>
                   </Button>

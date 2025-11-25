@@ -20,7 +20,7 @@ const Login = () => {
   const [error, setError] = useState("");
 
   // Demo credentials
-  const DEMO_EMAIL = "demo@kathrilagnaya.com";
+  const DEMO_EMAIL = "demo@khatrilagnaya.com";
   const DEMO_PASSWORD = "demo123";
 
   const handleLogin = (e) => {
@@ -48,7 +48,7 @@ const Login = () => {
             Welcome Back
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground">
-            Sign in to your Kathri Lagnaya account
+            Sign in to your Khatri Lagnaya account
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const Login = () => {
                 Demo Credentials:
               </p>
               <p className="text-xs text-muted-foreground">
-                Email: demo@kathrilagnaya.com
+                Email: demo@khatrilagnaya.com
               </p>
               <p className="text-xs text-muted-foreground">Password: demo123</p>
             </div>
@@ -87,7 +87,7 @@ const Login = () => {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="demo@kathrilagnaya.com"
+                    placeholder="demo@khatrilagnaya.com"
                     className="pl-10"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}

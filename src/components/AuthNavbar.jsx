@@ -17,7 +17,7 @@ const AuthNavbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-playfair text-base sm:text-xl font-bold text-primary">
-                Kathri Lagnaya
+                Khatri Lagnaya
               </span>
               <span className="text-xs text-muted-foreground hidden sm:block">
                 Where Tradition Meets Technology
@@ -39,6 +39,13 @@ const AuthNavbar = () => {
               activeClassName="text-primary font-semibold"
             >
               Matches
+            </NavLink>
+            <NavLink
+              to="/favourites"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              activeClassName="text-primary font-semibold"
+            >
+              Favourites
             </NavLink>
             <NavLink
               to="/profile"
